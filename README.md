@@ -13,12 +13,12 @@ This project documents a real-world brute force login investigation triggered by
   This project simulates a real Security OPerations Center (SOC) workflow for detecting and investigating brute force attacks in a controlled lab environment.
 
   **STEP1 VIEWING OF ALERT DASHBOARD** <br>
-    I clicked on **Alert** to view if an alert has been triggered. So i discovered that an alert titled **BRUTE FORCE DETECTION LAB VALIDATED** was already triggered.
+    I clicked on **Alert** to view if an alert has been triggered. So i discovered an alert titled **BRUTE FORCE DETECTION LAB VALIDATED** was already triggered.
 
 <img width="561" height="139" alt="image" src="https://github.com/user-attachments/assets/81d936c5-b709-4ba4-ab3b-2cc1a15c2c4a" />
 
 
-I clicked on the title for proper investigation and i discovered that two result has already been recorded with timestamp
+I clicked on the title for proper investigation, and i discovered that two result has already been recorded with timestamp
 
 **(1)** 	2026-02-19 11:05:00 WAT 	View Results <br>
 **(2)** 	2026-02-18 14:10:01 WAT 	View Results
@@ -28,11 +28,11 @@ I clicked on the title for proper investigation and i discovered that two result
 
 <img width="561" height="200" alt="image" src="https://github.com/user-attachments/assets/f2e2a51b-be75-4302-a831-da950492203b" />
 
-From the image pasted above, you discovered there are two statistc recorded. And from the statistcis, the below were recorded: <br>
-Tme <br>
-Account_Name <br>
-Host <br>
-Count <br>
+From the image pasted above, you discovered there are two statistics recorded. And from the statistics, the below were recorded: <br>
+* Tme <br>
+* Account_Name <br>
+* Host <br>
+* Count <br>
 
 To investigate further and deeper, i clicked on **Event (6)** the first button before statistic and patterns to view all the 6 failed login attempt
 
@@ -58,7 +58,7 @@ Account Domain:-----------		MASTERJOETECH <br>
 From the info above both the image screenshot and the one i typedout, stated that: <br>
 **1** EventCode=4625: This is a failed logon.
 
-**2** Logon_Type 2: This means someone triedd to login directly on the computer. eg typing a username and password on the login screen. Not remote nor web entry. 
+**2** Logon_Type 2: This means someone tried to login directly on the computer. (eg) typing a username and password on the login screen. Not remote nor web entry. 
 
 **3** Account Domain: This means the failed logon was attempted on a local computer **(MASTERJOETECH)**
 
@@ -66,15 +66,15 @@ From the info above both the image screenshot and the one i typedout, stated tha
 
 **5** Account Name---USER: This means the logon attempt was done on the user computer **MASTERJOETECH**
 
-From the investigation gathered, i discovered that the logon failure was done on my window os which i named MASTERJOETECH. Further more, the source IP that performed the failed login was my local host **127.0.0.1.** Because i typed a wrong password.  **Logon_type 2.**
+From the investigation gathered, i discovered that the logon failure was done on my window OS, which i named **MASTERJOETECH.** Further more, the source IP that performed the failed login was my local host **127.0.0.1.** That happened because i typed a wrong password.  **Logon_type 2.**
 
 I investigated the 6 failed logon and i discovered that the results were all the same.
 
 **Conclussion** <br>
-The the USER which is me at timesamp 02/19/2026 11.04.08.173am to 02/19/2026 11:04:26.303AM i tried to login into computer named MASTERJOETECH 6 times couldnt get access due to **REASONS** wrong password.
+The USER which is me, at timesamp 02/19/2026 11.04.08.173am to 02/19/2026 11:04:26.303AM tried to login into computer named **MASTERJOETECH** 6 times, couldnt get access due to **REASONS wrong password.**
 
 **TO SOLIDIFY MY INVESTIGATIONS** <br>
-I need to confirm if there was a successful login after the 6 attempted failed logons. On my search box i run the below: <br>
+I need to confirm if there were successful login after the 6 attempted failed logons. On my search box i run the below: <br>
 index=* EventCode=4624 Account_Name="USER"
 
 <img width="584" height="285" alt="image" src="https://github.com/user-attachments/assets/8576bf13-7554-4d2d-8ce9-3c7920c76c91" />
@@ -120,5 +120,7 @@ Privilege Escalation	      No <br>
 Account Compromise	        No evidence <br>
 Overall Severity	          Low <br
                                   
-**VERDICT**
-FALSE POSITIVE
+**VERDICT =** False Positive
+**ESCALATION:** No Escalation
+CLOSED
+
