@@ -15,7 +15,7 @@ This project documents a real-world brute force login investigation triggered by
   **STEP1 VIEWING OF ALERT DASHBOARD** <br>
     I clicked on **Alert** to view if an alert has been triggered. So i discovered that an alert titled **BRUTE FORCE DETECTION LAB VALIDATED** was already triggered.
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 13-48-28" src="https://github.com/user-attachments/assets/cfd5d52b-1238-4453-ad60-1d8646fa431b" />
+<img width="561" height="139" alt="image" src="https://github.com/user-attachments/assets/81d936c5-b709-4ba4-ab3b-2cc1a15c2c4a" />
 
 
 I clicked on the title for proper investigation and i discovered that two result has already been recorded with timestamp
@@ -26,7 +26,7 @@ I clicked on the title for proper investigation and i discovered that two result
    
   I clicked on the recent time alert **2026-02-19 11:00** to view the result for further investigation.
 
-  <img width="1280" height="800" alt="Screenshot from 2026-02-19 14-12-32" src="https://github.com/user-attachments/assets/38201d9a-c480-4fa7-8c7d-b20c13e66a15" />
+<img width="561" height="200" alt="image" src="https://github.com/user-attachments/assets/f2e2a51b-be75-4302-a831-da950492203b" />
 
 From the image pasted above, you discovered there are two statistc recorded. And from the statistcis, the below were recorded: <br>
 Tme <br>
@@ -36,15 +36,15 @@ Count <br>
 
 To investigate further and deeper, i clicked on **Event (6)** the first button before statistic and patterns to view all the 6 failed login attempt
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 15-21-55" src="https://github.com/user-attachments/assets/8b3f8fbb-7409-43fb-a2e0-61d609ee4bed" />
+<img width="584" height="250" alt="image" src="https://github.com/user-attachments/assets/39932412-710a-435a-9808-32a5a8378504" />
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 15-23-39" src="https://github.com/user-attachments/assets/b975a2fb-f8f1-409e-a994-7cda426a7dc3" />
+<img width="564" height="194" alt="image" src="https://github.com/user-attachments/assets/7dd3a7bd-1170-4686-9b21-88ad3a2d4370" />
 
 To go further and deeper in investigation, i clicked on the **show all 61 lines** from the first event.
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 15-42-09" src="https://github.com/user-attachments/assets/be407a0b-03eb-4a5a-ac39-3790ba7dd422" />
+<img width="568" height="277" alt="image" src="https://github.com/user-attachments/assets/3b6f5a11-e028-44bd-9d70-d22fbe6413fa" />
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 15-43-38" src="https://github.com/user-attachments/assets/63cdae59-dda7-48c8-a904-ac6ae2a443aa" />
+<img width="580" height="258" alt="image" src="https://github.com/user-attachments/assets/f1e1d7d5-5e1b-47e3-b613-f6d51a86877d" />
 
 Now i analyse further: <br>
 From the above info, i discovered: <br>
@@ -77,7 +77,7 @@ The the USER which is me at timesamp 02/19/2026 11.04.08.173am to 02/19/2026 11:
 I need to confirm if there was a successful login after the 6 attempted failed logons. On my search box i run the below: <br>
 index=* EventCode=4624 Account_Name="USER"
 
-<img width="1280" height="800" alt="Screenshot from 2026-02-19 17-59-20" src="https://github.com/user-attachments/assets/6ab50715-fd5d-446b-9cc7-3ffde4b859c1" />
+<img width="584" height="285" alt="image" src="https://github.com/user-attachments/assets/8576bf13-7554-4d2d-8ce9-3c7920c76c91" />
 
  From the above screenshot info, i discovered: <br>
 EventCode=4624--------------- Successful login <br>
